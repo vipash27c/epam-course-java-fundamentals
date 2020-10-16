@@ -1,4 +1,4 @@
-# epam-course-java-fundamentals
+# EPAM. Course. Java. Fundamentals
 ## Program    
 - [X] **Begin**    
     - [X] Begin    
