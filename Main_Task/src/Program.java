@@ -17,7 +17,10 @@ public class Program {
         //displayDataInReverseOrder();
 
         // task 3
-        displayRandomValues();
+        //displayRandomValues();
+
+        // task 4
+        outputResultOfCountingValues();
     }
 
     // 1. Приветствовать любого пользователя при вводе его имени через командную строку.
@@ -84,5 +87,53 @@ public class Program {
             array[i] = (int) (Math.random() * 100);
         }
         return array;
+    }
+
+    // 4. Ввести целые числа как аргументы командной строки, подсчитать их сумму (произведение) и вывести результат на консоль.
+    private static void outputResultOfCountingValues() {
+        System.out.println("--------------- TASK 4 ---------------");
+        int length = setLengthOfArray();
+        int[] array = getArrayOfIntegerValuesFromCommandLine(length);
+        int sum = getSum(array);
+        System.out.println("The sum of the numbers is: " + sum);
+        int multi = getMultiply(array);
+        System.out.println("Multiply of numbers is: " + multi);
+    }
+
+    // 4.1. Метод возвращает массив типа int, элементы которого инициализированы значениями из командной строки.
+    private static int[] getArrayOfIntegerValuesFromCommandLine(int length) {
+        Scanner scanner = null;
+        int[] array = new int[length];
+        for (int i = 0; i < array.length; i++) {
+            while (true) {
+                System.out.print("Enter an integer value: ");
+                scanner = new Scanner(System.in);
+                if (scanner.hasNextInt()) {
+                    array[i] = scanner.nextInt();
+                    break;
+                } else {
+                    System.out.println("Input wrong data! Repeat please.");
+                }
+            }
+        }
+        return array;
+    }
+
+    // 4.2. Метод возвращает сумму значений всех элементов массива
+    private static int getSum(int[] array) {
+        int sum = 0;
+        for(int i : array) {
+            sum += i;
+        }
+        return sum;
+    }
+
+    // 4.3. Метод возвращает произведение значений всех элементов массива
+    private static int getMultiply(int[] array) {
+        int multi = 1;
+        for(int i : array) {
+            multi *= i;
+        }
+        return multi;
     }
 }
