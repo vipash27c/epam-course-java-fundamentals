@@ -11,16 +11,16 @@ public class Program {
 
     public static void main(String[] args) {
         // task 1
-        //welcomeUser();
+        welcomeUser();
 
         // task 2
-        //displayDataInReverseOrder();
+        displayDataInReverseOrder();
 
         // task 3
-        //displayRandomValues();
+        displayRandomValues();
 
         // task 4
-        //outputResultOfCountingValues();
+        outputResultOfCountingValues();
 
         // task 5
         displayNameOfMonth();
@@ -45,6 +45,7 @@ public class Program {
         for (int i = line.length() - 1; i >= 0; i--) {
             System.out.print(line.charAt(i));
         }
+        System.out.println();
     }
 
     // 3. Вывести заданное количество случайных чисел с переходом и без перехода на новую строку.
@@ -60,6 +61,7 @@ public class Program {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
+        System.out.println();
     }
 
     // 3.1. Метод возвращает значение переменной типа int, которое >= 0. Значение переменной будет задавать размер массива.
