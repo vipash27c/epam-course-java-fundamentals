@@ -20,7 +20,10 @@ public class Program {
         //displayRandomValues();
 
         // task 4
-        outputResultOfCountingValues();
+        //outputResultOfCountingValues();
+
+        // task 5
+        displayNameOfMonth();
     }
 
     // 1. Приветствовать любого пользователя при вводе его имени через командную строку.
@@ -122,7 +125,7 @@ public class Program {
     // 4.2. Метод возвращает сумму значений всех элементов массива
     private static int getSum(int[] array) {
         int sum = 0;
-        for(int i : array) {
+        for (int i : array) {
             sum += i;
         }
         return sum;
@@ -131,9 +134,82 @@ public class Program {
     // 4.3. Метод возвращает произведение значений всех элементов массива
     private static int getMultiply(int[] array) {
         int multi = 1;
-        for(int i : array) {
+        for (int i : array) {
             multi *= i;
         }
         return multi;
+    }
+
+    // 5. Ввести число от 1 до 12. Вывести на консоль название месяца, соответствующего данному числу. Осуществить проверку корректности ввода чисел.
+    private static void displayNameOfMonth() {
+        System.out.println("--------------- TASK 5 ---------------");
+        int monthValue = setMonthValue();
+        String monthName = getNameOfMonth(monthValue);
+        System.out.println("The month is: " + monthName);
+    }
+
+    // 5.1. Метод возвращает значение переменной типа int, которое > 0 && < 13.
+    private static int setMonthValue() {
+        Scanner scanner = null;
+        int value = 0;
+        while (true) {
+            System.out.print("Set month value: ");
+            scanner = new Scanner(System.in);
+            if (scanner.hasNextInt()) {
+                value = scanner.nextInt();
+                if (value > 0 && value < 13) {
+                    break;
+                } else {
+                    System.out.println("Input wrong data! Repeat please.");
+                }
+            } else {
+                System.out.println("Input wrong data! Repeat please.");
+            }
+        }
+        return value;
+    }
+
+    // 5.2. Метод возвращает строку с названием месяца
+    private static String getNameOfMonth(int monthValue) {
+        String monthName = "";
+        switch (monthValue) {
+            case 1:
+                monthName = "January";
+                break;
+            case 2:
+                monthName = "February";
+                break;
+            case 3:
+                monthName = "March";
+                break;
+            case 4:
+                monthName = "April";
+                break;
+            case 5:
+                monthName = "May";
+                break;
+            case 6:
+                monthName = "June";
+                break;
+            case 7:
+                monthName = "July";
+                break;
+            case 8:
+                monthName = "August";
+                break;
+            case 9:
+                monthName = "September";
+                break;
+            case 10:
+                monthName = "October";
+                break;
+            case 11:
+                monthName = "November";
+                break;
+            case 12:
+                monthName = "December";
+                break;
+        }
+        return monthName;
     }
 }
