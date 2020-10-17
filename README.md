@@ -1,7 +1,7 @@
 # EPAM. Course. Java. Fundamentals
 ## Program    
-- [X] **Begin**    
-    - [X] _Begin_    
+### Begin    
+- [X] _Begin_    
 - [ ] **Main Task**    
     - [X] **_Main Task_**   
         _Реализовать следующие программы:_    
