@@ -1,4 +1,4 @@
-# EPAM. Course. Java. Fundamentals
+# EPAM. Course: "Java. Fundamentals"
 ## Program       
 ### Main Task
 - [X] **Main Task**   
