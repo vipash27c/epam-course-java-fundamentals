@@ -1,5 +1,5 @@
 https://careers.epam.by/
-# Course. Java. Fundamentals
+# Epam. Course: Java. Fundamentals.
 ## Program       
 ### Main Task
 **Main Task**    
