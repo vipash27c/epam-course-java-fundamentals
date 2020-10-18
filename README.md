@@ -1,4 +1,4 @@
-https://careers.epam.by/
+[learn.epam.com/java-fundamentals](https://learn.epam.com/detailsPage?id=2dc581e5-a788-4737-9730-183dfef41e5f)
 # Epam. Course: Java. Fundamentals.
 ## Program       
 ### Main Task
