@@ -1,6 +1,6 @@
 # EPAM. Course. Java. Fundamentals
 ## Program       
-#### Main Task
+### Main Task
 - [X] **Main Task**   
 _Реализовать следующие программы:_    
 :white_check_mark: 1. Приветствовать любого пользователя при вводе его имени через командную строку.    
